@@ -1,0 +1,15 @@
+{
+    "background_color": "#FFFFFF",
+    "display": "fullscreen",
+    "icons": [
+        {
+            "sizes": "200x200",
+            "src": "logo.png",
+            "type": "image/png"
+        }
+    ],
+    "name": "葫芦影视 Dianying.im",
+    "short_name": "葫芦影视",
+    "start_url": "",
+    "theme_color": "#FFFFFF"
+}

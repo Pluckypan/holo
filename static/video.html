@@ -1,0 +1,104 @@
+<html>
+
+<head>
+  <title> EasyDoc - 播放器</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="referrer" content="never">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0 ,maximum-scale=1.0, user-scalable=no">
+  <script src="../statics/js/jquery.min.js"></script>
+  <!-- <script src="../js/dt.js"></script> -->
+
+  <script src="./js/mui-player.min.js"></script>
+  <link rel="stylesheet" href="./css/mui-player.min.css">
+  <script src="./js/mui-player-desktop-plugin.min.js"></script>
+  <script src="./js/mui-player-mobile-plugin.min.js"></script>
+  <script src="./js/hls.min.js"></script>
+  <script src="./js/flv.min.js"></script>
+  <script src="./js/config.js"></script>
+  <style id="pseudo-classes-cue" type="text/css">
+    .m-player video::cue {
+      color: #FFFFFF !important;
+    }
+
+    #player_pic {
+      background: rgba(0, 0, 0, 0.75) !important;
+    }
+
+    .player_pic_link img {
+      width: 100% !important;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body marginwidth="0" marginheight="0">
+
+  <div id="mui-player" class="content m-player page-fullscreen" tabindex="0" style="width: auto; height: auto;">
+
+  </div>
+  <div id="player_pic" style="display:none;">
+    <div class="player_pic_box">
+      <div class="close-player_pic" onclick="document.getElementById('player_pic').style.display='none'">✕</div>
+      <div class="player_pic_link" onclick="openurl()">
+        <img alt="" src="https://img.1991.wiki/tuchongeter/photograph/JXFYAHZX9MTMDQE" style="width: auto;">
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    let urlQuerys = (url) => {
+      const querys = url.slice(url.indexOf("?") + 1)
+      let obj = {}
+      const items = querys.split("&")
+      console.log(items);
+      items.map(i => {
+        const [key, value] = i.split("=")
+        obj[key] = value
+      })
+      return obj;
+    };
+
+    if ((navigator.userAgent.indexOf('MSIE') >= 0) || (navigator.userAgent.indexOf('Trident') >= 0)) {
+      alert("本播放器在IE浏览器和兼容模式下无法播放，请将浏览器设置为 极速模式！")
+    }
+    let x = window.location.search.replace('?url=', '');
+    let querys = urlQuerys(x);
+    // console.log(querys);
+    // video id
+    let vid = querys.vid;
+    // movie tv anime
+    let type = querys.type;
+    // source id
+    let sid = querys.sid;
+    // play id
+    let pid = querys.pid;
+    console.log(`vid=${vid} type=${type} sid=${sid} pid=${pid}`);
+
+    $.getJSON("../js/ctags.json", (data) => {
+      let arr = data && data.length > 0 ? data : [];
+      let sources = arr.find((i) => i.pash == vid && i.tag == "sources");
+      let config = sources && sources.config && Object.values(sources.config).length > 0 ? Object.values(sources.config) : [];
+      let source = config && config.length > 0 && sid >= 0 && sid < config.length ? config[sid] : [];
+      let obj = source && source.length > 0 && pid >= 0 && pid < source.length ? source[pid] : null;
+      // console.log(obj);
+      console.log(location.href);
+      player({
+        "url": obj ? obj.url : '',
+        "vkey": vid,
+        "key": vid,
+        "next": "",
+        "contextmenu": "EasyDoc",
+        "contextlink": "//holo.1991.wiki",
+        "themecolor": "#ff2a14"
+      });
+    });
+
+    function openurl() {
+
+    }
+  </script>
+</body>
+
+</html>
