@@ -261,7 +261,7 @@ $(function () {
         'rEcAP': _0x1ddb('‮20', 'Dy%u'),
         'EEaLW': 'the_value',
         'scvaW': _0x1ddb('‫21', '9VET'),
-        'GKLaa': '<div\x20class=\x22popup\x20popup-ts\x20popup-tc\x20popupicon\x20open\x22><div\x20class=\x22popup-header\x20popup-header-icon\x22></div><div\x20class=\x22popup-main\x22><p>小影发现你的浏览器通过\x20<em>广告屏蔽插件</em>\x20将电影先生的广告去除，真的非常抱歉！！！。</p><p>虽然小影和你一样，都不喜欢看到广告，但电影先生现在只能靠这点微薄的广告收入维持服务器开销。</p><p>为了电影先生持续的发展，小影在这里恳求修改设置，针对电影先生\x20<em><strong>关闭</strong>广告过滤插件</em>，感谢支持和理解！！！</p><p>关闭插件后，本弹窗将自动消失并不再提示。</p></div></div><div\x20class=\x22shortcuts-m-overlay\x22></div>',
+        'GKLaa': '<div\x20class=\x22popup\x20popup-ts\x20popup-tc\x20popupicon\x20open\x22><div\x20class=\x22popup-header\x20popup-header-icon\x22></div><div\x20class=\x22popup-main\x22><p>发现你的浏览器通过\x20<em>广告屏蔽插件</em><em>请您<strong>关闭</strong>广告过滤插件</em>，感谢支持和理解！！！</p><p>关闭插件后，本弹窗将自动消失并不再提示。</p></div></div><div\x20class=\x22shortcuts-m-overlay\x22></div>',
         'xuwLp': _0x1ddb('‮22', 'RVyx'),
         'qcAMH': function (_0x496430, _0x3b0c1f) {
             return _0x496430(_0x3b0c1f);
@@ -583,3 +583,14 @@ $(function () {
     }
 });;
 _0xodL = 'jsjiami.com.v6';
+
+function urlParams(url) {
+    const params = url.slice(url.indexOf("?") + 1);
+    const obj = {};
+    const items = params.split("&");
+    items.map(i => {
+        const [key, value] = i.split("=");
+        obj[key] = value;
+    });
+    return obj;
+}

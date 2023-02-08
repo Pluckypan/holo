@@ -4471,8 +4471,10 @@ input[type=checkbox] {
         max-width: 1520px
     }
 
+
     .module-main {
-        width: 1300px
+        /* 1300px */
+        width: 100%;
     }
 
     .module-main .module-lines-list .module-item:nth-child(n+13),
@@ -4488,7 +4490,8 @@ input[type=checkbox] {
     }
 
     .module-main {
-        width: 1030px
+        /* 1030px */
+        width: 100%;
     }
 
     .text-list-item {
@@ -4540,7 +4543,8 @@ input[type=checkbox] {
     }
 
     .module-main {
-        width: 955px
+        /* 955px */
+        width: 100%;
     }
 
     .module-side {

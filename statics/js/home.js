@@ -26,44 +26,7 @@ var MAC = {
     'Suggest': {
         'Init': function ($obj, $mid, $jumpurl) {
             try {
-                $($obj).autocomplete('/index.php/ajax/suggest?mid=' + $mid, {
-                    inputClass: "ac_input",
-                    resultsClass: "ac_items",
-                    loadingClass: "ac_loading",
-                    minChars: 1,
-                    matchSubset: 0,
-                    cacheLength: 10,
-                    multiple: false,
-                    matchContains: true,
-                    autoFill: false,
-                    dataType: "json",
-                    parse: function (r) {
-                        if (r.code == 1) {
-                            var parsed = [];
-                            $.each(r['list'],
-                                function (index, row) {
-                                    row.url = r.url;
-                                    parsed[index] = {
-                                        data: row
-                                    };
-                                });
-                            return parsed;
-                        } else {
-                            return {
-                                data: ''
-                            };
-                        }
-                    },
-                    formatItem: function (row, i, max) {
-                        return row.name;
-                    },
-                    formatResult: function (row, i, max) {
-                        return row.text;
-                    }
-                }).result(function (event, data, formatted) {
-                    $($obj).val(data.name);
-                    location.href = data.url.replace('mac_wd', encodeURIComponent(data.name));
-                });
+                // location.href = data.url.replace('mac_wd', encodeURIComponent(data.name));
             } catch (e) { }
         }
     },
@@ -83,21 +46,18 @@ var MAC = {
                 MAC.Pop.Msg('内容不能为空', 1500);
                 return false;
             }
-            MAC.Ajax(maccms.path + '/index.php/gbook/saveData', 'post', 'json', $('.gbook_form').serialize(),
-                function (r) {
-                    MAC.Pop.Msg(r.msg, 5000);
-                    if (r.code == 1) {
-                        location.reload();
-                    } else {
-                        if (MAC.Gbook.Verify == 1) {
-                            MAC.Verify.Refresh();
-                        }
-                    }
-                });
+            // MAC.Pop.Msg(r.msg, 5000);
+            // if (r.code == 1) {
+            //     location.reload();
+            // } else {
+            //     if (MAC.Gbook.Verify == 1) {
+            //         MAC.Verify.Refresh();
+            //     }
+            // }
         },
         'Report': function (name, id) {
-            MAC.Pop.Show('我要报错', maccms.path + '/index.php/gbook/report.html?id=' + id + '&name=' + encodeURIComponent(name),
-                function (r) { });
+            // MAC.Pop.Show('我要报错', maccms.path + '/index.php/gbook/report.html?id=' + id + '&name=' + encodeURIComponent(name),
+            //     function (r) { });
         }
     },
     'Pop': {
@@ -140,21 +100,7 @@ var MAC = {
     },
     'Hits': {
         'Init': function () {
-            if ($('.mac_hits').length == 0) {
-                return;
-            }
-            var $that = $(".mac_hits");
-            MAC.Ajax(maccms.path + '/index.php/ajax/hits?mid=' + $that.attr("data-mid") + '&id=' + $that.attr("data-id") + '&type=update', 'get', 'json', '',
-                function (r) {
-                    if (r.code == 1) {
-                        $(".mac_hits").each(function (i) {
-                            $type = $(".mac_hits").eq(i).attr('data-type');
-                            if ($type != 'insert') {
-                                $('.' + $type).html(eval('(r.data.' + $type + ')'));
-                            }
-                        });
-                    }
-                });
+
         }
     }
 }
