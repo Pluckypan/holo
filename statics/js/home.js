@@ -81,6 +81,7 @@ var MAC = {
             if ($('.shortcuts-mobile-overlay').length != 1) {
                 MAC.Pop.Remove();
             }
+            console.trace("跟踪弹窗");
             $('body').append('<div class="popup" id="report-popup"><div class="popup-icon"><img src="/statics/images/report.svg?1"></div><div class="popup-header"><h2 class="popup-title"></h2></div><div class="popup-main"></div><div class="close-popup" id="close-popup"><i class="icon-close-o"></i></div></div><div class="shortcuts-overlay"></div>');
             $('.close-popup').click(function () {
                 $('.shortcuts-overlay,.popup').remove();
