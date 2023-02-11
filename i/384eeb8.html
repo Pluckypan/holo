@@ -75,40 +75,64 @@
       <div class="search-tag">
         
         
+        <a href="../i/c50f2e9.html" class="hot">
+          <i class="icon-hot">
+          </i>
+          中国机长
+        </a>
+        
+        <a href="../i/43123c4.html" class="hot">
+          <i class="icon-hot">
+          </i>
+          南海十三郎
+        </a>
+        
+        <a href="../i/801c9df.html" class="hot">
+          <i class="icon-hot">
+          </i>
+          隐藏人物
+        </a>
+        
+        <a href="../i/0215b41.html" class="hot">
+          <i class="icon-hot">
+          </i>
+          孟买酒店
+        </a>
+        
+        <a href="../i/875cf74.html" class="hot">
+          <i class="icon-hot">
+          </i>
+          模仿游戏
+        </a>
+        
+        <a href="../i/b706feb.html" class="hot">
+          <i class="icon-hot">
+          </i>
+          悬崖之上
+        </a>
+        
+        <a href="../i/aa944c5.html" class="hot">
+          <i class="icon-hot">
+          </i>
+          隐入尘烟
+        </a>
+        
+        <a href="../i/892489d.html" class="hot">
+          <i class="icon-hot">
+          </i>
+          误杀瞒天记
+        </a>
+        
+        <a href="../i/ae52d47.html" class="hot">
+          <i class="icon-hot">
+          </i>
+          绿皮书
+        </a>
+        
         <a href="../i/9e75925.html" class="hot">
           <i class="icon-hot">
           </i>
           狂飙
-        </a>
-        
-        <a href="../i/384eeb8.html" class="hot">
-          <i class="icon-hot">
-          </i>
-          流浪地球2
-        </a>
-        
-        <a href="../i/958251d.html" class="hot">
-          <i class="icon-hot">
-          </i>
-          爱，死亡和机器人 第三季
-        </a>
-        
-        <a href="../i/dd72649.html" class="">
-          <i class="">
-          </i>
-          普通人
-        </a>
-        
-        <a href="../i/f12c152.html" class="">
-          <i class="">
-          </i>
-          千与千寻
-        </a>
-        
-        <a href="../i/76422ca.html" class="">
-          <i class="">
-          </i>
-          投屏教程
         </a>
         
       </div>
@@ -754,7 +778,7 @@
                 下载
               </span>
             </a>
-            <a class="btn-copyurl copy" href="javascript:;" data-clipboard-text="https://dow.dowlz10.com/20230123/17299_f6bfe0ab/流浪地球2.mp4" title="复制 流浪地球2 - TC中字 下载地址">
+            <a class="btn-copyurl copy" href="javascript:onCopyUrl(`https://dow.dowlz10.com/20230123/17299_f6bfe0ab/流浪地球2.mp4`);" data-clipboard-text="https://dow.dowlz10.com/20230123/17299_f6bfe0ab/流浪地球2.mp4" title="复制 流浪地球2 - TC中字 下载地址">
               <i class="icon-url">
               </i>
               <span class="btn-pc">
@@ -773,19 +797,13 @@
 </div>
 
 <script type="text/javascript">
-  var url = $(".copy").attr("data-clipboard-text");
-  var clipboard = new Clipboard('.copy');
-  clipboard.on('success',
-    function(e) {
-      console.log(e);
-      $('.shortcuts-box').show();
-      console.log('下载地址复制成功！');
-      $('#shortcuts-info').html('下载地址复制成功！');
-      setTimeout(function() {
-          $('.shortcuts-box').fadeOut(200);
-        },
-        2000);
-    });
+  function onCopyUrl(url) {
+    var clipboard = new Clipboard('.copy');
+    clipboard.on('success',
+      function(e) {
+        toast('下载地址复制成功！');
+      });
+  }
   $(".downtab-item").click(function() {
     $(".downtab-item").removeClass("selected");
     $(".module-downlist").removeClass("selected");
