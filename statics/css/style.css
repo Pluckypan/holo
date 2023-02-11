@@ -1541,6 +1541,14 @@ input[type=checkbox] {
     display: inline-block
 }
 
+.popup {
+    display: none !important;
+}
+
+.shortcuts-m-overlay {
+    display: none !important;
+}
+
 .popup-title::after {
     content: '';
     position: absolute;
