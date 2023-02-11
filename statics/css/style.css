@@ -1030,7 +1030,7 @@ input[type=checkbox] {
 }
 
 #main {
-    min-height: calc(100vh - 200px);
+    min-height: calc(100vh - 180px);
 }
 
 .homepage #header {
