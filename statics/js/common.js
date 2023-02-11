@@ -85,7 +85,7 @@ var _0x5750 = function (_0x1d0028, _0x29df22) {
     } else {
         _0x4dd59f = _0x23a72a;
     }
-    //console.log(`key = ${_0x4dd59f}`);
+    // console.log(`key = ${_0x4dd59f}`);
     return _0x4dd59f;
 };
 var stui = {
@@ -450,7 +450,7 @@ var stui = {
         }
     }
 };
-window[_0x5750('c2', 'IXmd')](function () {
+window['setInterval'](function () {
     var _0x5192da = {
         'XSjAi': function (_0x2106f4, _0x3fe7c8, _0x1457a4) {
             return _0x2106f4(_0x3fe7c8, _0x1457a4);
@@ -514,7 +514,7 @@ window[_0x5750('c2', 'IXmd')](function () {
     _0x5192da['BCxEv'](_0x764515);
 },
     0x7d0);
-$(document)[_0x5750('d6', 'd*sR')](function () {
+$(document)['ready'](function () {
     var _0x518c30 = {
         'CWoYI': 'yVwwH'
     };
@@ -529,9 +529,9 @@ $(document)[_0x5750('d6', 'd*sR')](function () {
             stui[_0x5750('da', ']ton')]['swiper']();
         }
     }
-    stui['images'][_0x5750('db', 'd*sR')]();
-    stui[_0x5750('dc', 'Hc!J')][_0x5750('dd', 'd*sR')]();
-    stui[_0x5750('de', '%u3]')][_0x5750('df', 'jhMR')]();
+    stui['images']['qrcode']();
+    stui['common']['history']();
+    stui['common']['more']();
 }); !
     function (_0x3f1903) {
         var _0x3d18a0 = {
@@ -544,7 +544,7 @@ $(document)[_0x5750('d6', 'd*sR')](function () {
             'sLDHW': function (_0x39ff8c, _0x2fca68) {
                 return _0x39ff8c + _0x2fca68;
             },
-            'yyJul': _0x5750('e0', 'IT#j'),
+            'yyJul': 'class',
             'farvx': '_lazyCache',
             'zZySV': function (_0x2dbfbd, _0x3f7e68, _0x4b490f) {
                 return _0x2dbfbd(_0x3f7e68, _0x4b490f);
@@ -554,9 +554,9 @@ $(document)[_0x5750('d6', 'd*sR')](function () {
             },
             'iImnJ': 'sqytg',
             'DFKqm': 'wYlLF',
-            'VqCbX': _0x5750('e1', 'dU2z'),
+            'VqCbX': 'Event',
             'auCzH': 'width',
-            'BmCda': _0x5750('e2', 'jhMR'),
+            'BmCda': '75%',
             'wpEHV': function (_0x16c4b5, _0xcb1aa8) {
                 return _0x16c4b5(_0xcb1aa8);
             },
@@ -577,11 +577,11 @@ $(document)[_0x5750('d6', 'd*sR')](function () {
                 return _0x5c6f2a(_0x3a731a);
             },
             'haImu': 'lazyload',
-            'PKYDV': _0x5750('e5', '6JTZ'),
-            'BAWSp': _0x5750('e6', '@MJo'),
-            'IQKrf': _0x5750('e7', 'qe2b'),
-            'jqCcL': _0x5750('e8', '9Gcx'),
-            'rckwl': _0x5750('e9', 'OPJB'),
+            'PKYDV': 'lazyloading',
+            'BAWSp': 'lazyerror',
+            'IQKrf': 'lazyautosizes',
+            'jqCcL': 'data-src',
+            'rckwl': 'data-srcset',
             'gJHVr': function (_0x1845f6, _0x47bd57) {
                 return _0x1845f6 in _0x47bd57;
             },
@@ -1187,17 +1187,17 @@ $(document)[_0x5750('d6', 'd*sR')](function () {
                 if (function () {
                     var _0x3f1903;
                     var _0x54528c = {
-                        'lazyClass': _0x3541db['BEjqL'],
-                        'loadedClass': _0x3541db[_0x5750('1a1', 'Bsm1')],
-                        'loadingClass': _0x3541db[_0x5750('1a2', 'jhMR')],
+                        'lazyClass': 'lazyload',
+                        'loadedClass': 'lazyloaded',
+                        'loadingClass': 'lazyloading',
                         'preloadClass': 'lazypreload',
-                        'errorClass': _0x3541db['bLFDt'],
-                        'autosizesClass': _0x3541db['BzqvV'],
-                        'fastLoadedClass': _0x5750('1a3', '16Ni'),
+                        'errorClass': 'lazyerror',
+                        'autosizesClass': 'lazyautosizes',
+                        'fastLoadedClass': 'ls-is-cached',
                         'iframeLoadMode': 0x0,
-                        'srcAttr': _0x3541db[_0x5750('1a4', 'FbrD')],
-                        'srcsetAttr': _0x3541db[_0x5750('1a5', 'OPJB')],
-                        'sizesAttr': _0x5750('1a6', 'd*sR'),
+                        'srcAttr': 'data-src',
+                        'srcsetAttr': 'data-srcset',
+                        'sizesAttr': 'data-sizes',
                         'minSize': 0x28,
                         'customMedia': {},
                         'init': !![],

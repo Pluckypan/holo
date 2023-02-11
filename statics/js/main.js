@@ -617,3 +617,17 @@ var toast = (content, time) => {
         }, time || 1000);
     });
 };
+
+$.fn.listenValue = function (callback) {
+    return this.each(function () {
+        var $this = $(this);
+        if (typeof (callback) == 'function') {
+            callback.apply(this);
+        }
+        $this.bind('input propertychange change', function () {
+            if (typeof (callback) == 'function') {
+                callback.apply(this);
+            }
+        })
+    });
+};
