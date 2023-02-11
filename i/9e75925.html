@@ -3225,6 +3225,15 @@
   </p>
   <p class="">本站所有内容均来自互联网分享站点所提供的公开引用资源，未提供影视资源上传、存储服务。</p>
 </footer>
+<script>
+  $(() => {
+    if (location.href.indexOf("inDebug") > 0) {
+      $.getScript('https://unpkg.com/vconsole@latest/dist/vconsole.min.js', function() {
+        new window.VConsole();
+      });
+    }
+  });
+</script>
 </body>
 
 </html>
