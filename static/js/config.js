@@ -91,7 +91,8 @@ function _0x1bfe(_0x433d58, _0x20c437) {
         _0x593e97 = _0x54ce9a;
     }
 
-    if (_0x593e97 == "#load") {
+    //_0x593e97 == "#load" ||
+    if (_0x593e97 == "xnfSm") {
         // console.trace(`#load`);
     }
     // console.log(`key ${_0x593e97}`);
@@ -134,7 +135,9 @@ function MPlayer(_0x386c89, _0x45eb8a, _0x222ef7, _0x4fa670, _0x10803e, _0x181cc
         'rWbAw': _0x1bfe('‮15', 'EAuB'),
         'bYjxW': 'ended',
         'hzWKX': function (_0x496743, _0x2c9f1c, _0x387350) {
-            return _0x496743(_0x2c9f1c, _0x387350);
+            let x = _0x496743(_0x2c9f1c, _0x387350);
+            console.log(`x=${x}`);
+            return x;
         },
         'xnfSm': '#load',
         'osdpI': function (_0x183263, _0xda17a5) {
@@ -182,9 +185,9 @@ function MPlayer(_0x386c89, _0x45eb8a, _0x222ef7, _0x4fa670, _0x10803e, _0x181cc
                             let sta = _0x33700e[_0x45bcb0++];
                             switch (sta) {
                                 case '0':
-                                    _0x56adc4['addEventListener'](_0x4f68b6[_0x1bfe('‮2e', '%0AA')],
+                                    _0x56adc4['addEventListener']('pause',
                                         function () {
-                                            _0x9c213e['IGGWx']($, _0x9c213e[_0x1bfe('‮2f', '!pK)')])[_0x1bfe('‮30', '3osQ')]();
+                                            _0x9c213e['IGGWx']($, `#player_pic`)[`show`]();
                                         });
                                     continue;
                                 case '1':
@@ -193,15 +196,12 @@ function MPlayer(_0x386c89, _0x45eb8a, _0x222ef7, _0x4fa670, _0x10803e, _0x181cc
                                         console.log(`removing loading element`);
                                         $('#load', parent['document'])['remove']();
                                     }
-                                    // setTimeout(() => {
-
-                                    // }, 1500);
                                     continue;
                                 case '2':
                                     let k2 = _0x1bfe('‮31', 'GyFx');
                                     let fk2 = _0x1bfe('‫32', 'vQ[3');
                                     let evt2 = _0x4f68b6[fk2];
-                                   // console.log(`setup ${k2} ${evt2}`);
+                                    console.log(`setup ${k2} ${evt2}`);
                                     _0x56adc4[k2](evt2,
                                         function () {
                                             console.log(`onMetaDataLoaded`);
@@ -212,16 +212,18 @@ function MPlayer(_0x386c89, _0x45eb8a, _0x222ef7, _0x4fa670, _0x10803e, _0x181cc
                                             console.log(lfunc);
                                             $(loadEle, parent[pEle])[lfunc]();
                                             this['currentTime'] = _0x5ae83f;
+                                            // $("video").attr("muted", "muted");
+                                            // $("._play").click();
                                         });
                                     continue;
                                 case '3':
-                                    _0x56adc4[_0x1bfe('‫35', 'zj1l')](_0x4f68b6[_0x1bfe('‫36', '2IMn')],
+                                    _0x56adc4['addEventListener']('play',
                                         function () {
-                                            $(_0x9c213e['rrtuv'])[_0x1bfe('‮37', 'zVhi')]();
+                                            $('#player_pic')['hide']();
                                         });
                                     continue;
                                 case '4':
-                                    var _0x5ae83f = localStorage[_0x1bfe('‫38', '(ya4')](_0x222ef7);
+                                    var _0x5ae83f = localStorage['getItem'](_0x222ef7);
                                     continue;
                                 case '5':
                                     let evt5 = _0x1bfe('‮39', 'gw1R');
@@ -235,15 +237,16 @@ function MPlayer(_0x386c89, _0x45eb8a, _0x222ef7, _0x4fa670, _0x10803e, _0x181cc
                                 case '6':
                                     let xfun = _0x1bfe('‫3d', '%XzZ');
                                     console.log(`attribute =${xfun} `);
-
                                     var _0x9c213e = {
                                         'iLVHv': xfun,
                                         'IGGWx': function (_0x118c7f, _0x406721) {
-                                            return _0x4f68b6[_0x1bfe('‮3e', 'Znx1')](_0x118c7f, _0x406721);
+                                            let c = _0x4f68b6[_0x1bfe('‮3e', 'Znx1')](_0x118c7f, _0x406721);
+                                            console.log(`c=${c}`);
+                                            return c;
                                         },
-                                        'rrtuv': _0x4f68b6[_0x1bfe('‮3f', '3osQ')]
+                                        'rrtuv': `#player_pic`
                                     };
-                                   // console.log(_0x9c213e);
+                                    // console.log(_0x9c213e);
                                     continue;
                                 case '7':
                                     let aent = _0x4f68b6[_0x1bfe('‮40', '$4bI')];

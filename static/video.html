@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="referrer" content="never">
   <meta name="renderer" content="webkit">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0 ,maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <script src="../statics/js/jquery.min.js"></script>
   <!-- <script src="../js/dt.js"></script> -->
 
@@ -82,13 +82,12 @@
       let config = sources && sources.config && Object.values(sources.config).length > 0 ? Object.values(sources.config) : [];
       let source = config && config.length > 0 && sid >= 0 && sid < config.length ? config[sid] : [];
       let obj = source && source.length > 0 && pid >= 0 && pid < source.length ? source[pid] : null;
-      // console.log(obj);
       console.log(location.href);
       player({
         "url": obj ? obj.url : '',
         "vkey": vid,
         "key": vid,
-        "next": "",
+        "next": '',
         "contextmenu": "EasyDoc",
         "contextlink": "//holo.1991.wiki",
         "themecolor": "#ff2a14"

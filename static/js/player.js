@@ -141,7 +141,9 @@ var MacPlayer = {
                     _0x1fe2b6[_0x344f('‫11', 'V$2B')] = '';
                     continue;
                 case '4':
-                    var _0x1fe2b6 = document['createElement'](_0x344f('‮12', '!&mr'));
+                    let x1 = _0x344f('‮12', '!&mr');
+                    console.log('create ${x1}');
+                    var _0x1fe2b6 = document['createElement'](x1);
                     continue;
                 case '5':
                     _0x9a080['oNjfd']($, _0x344f('‫13', 'hv4z'))[_0x344f('‫14', '(6Z[')](_0x9a080['ynPNV'], this[_0x344f('‫15', 'KZbO')]);
@@ -173,7 +175,8 @@ var MacPlayer = {
                         this[_0x344f('‮20', 'BVXg')] * 0x3e8);
                     continue;
                 case '11':
-                    _0x2af549[_0x344f('‫21', 'eQz!')]['insertBefore'](_0x1fe2b6, _0x2af549);
+                    let x2 = _0x344f('‫21', 'eQz!');
+                    _0x2af549[x2]['insertBefore'](_0x1fe2b6, _0x2af549);
                     continue;
                 case '12':
                     _0x9a080['TXrJg']($, _0x9a080[_0x344f('‫22', 'zk(n')])['get'](0x0)[_0x344f('‫23', 'Ub$S')] = _0x9a080['XlJlb'](this[_0x344f('‫24', '^TTs')], '');
@@ -229,7 +232,10 @@ var MacPlayer = {
             'TIYxB': _0x344f('‫3f', 'sY20'),
             'rHAyk': _0x344f('‮40', '%BII')
         };
-        document[_0x344f('‫41', 'KZbO')](_0x344f('‫42', 'L1rz'));
+        let x3 = _0x344f('‫41', 'KZbO');
+        let x4 = _0x344f('‫42', 'L1rz');
+        x4 = x4.replace("如果你觉得电影先生不错，记得把dianying.in推荐给朋友们", "如果你觉得本站还不错，记得推荐给你的朋友们哦ヾ(◍°∇°◍)ﾉﾞ");
+        document[x3](x4);
         this['Height'] = $(_0x47dfb6[_0x344f('‫43', '!Vl6')])[_0x344f('‮44', 'O)fr')](0x0)['offsetHeight'];
         this[_0x344f('‫45', 'ysnG')] = $(_0x47dfb6[_0x344f('‮46', 'O%lD')])[_0x344f('‮47', 'Yy6H')](0x0)[_0x344f('‫48', '8]YE')];
         document['write'](_0x47dfb6[_0x344f('‫49', 'E4ul')](_0x47dfb6['TlDyt'](_0x47dfb6[_0x344f('‮4a', 'c4Ms')](_0x344f('‫4b', '!&mr') + _0x47dfb6[_0x344f('‮4c', 'eQz!')], this['Path']) + this['PlayFrom'], _0x47dfb6[_0x344f('‫4d', 'cMu6')]), _0x47dfb6['rHAyk']));
