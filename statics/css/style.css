@@ -2542,10 +2542,6 @@ input[type=checkbox] {
     padding: 0 0 30px
 }
 
-.module-line-list .module-item:nth-child(n+9) {
-    display: none
-}
-
 .module-item-go .module-item-cover {
     padding-top: 58%;
     overflow: inherit
@@ -4488,12 +4484,6 @@ input[type=checkbox] {
         /* 1300px */
         width: 100%;
     }
-
-    .module-main .module-lines-list .module-item:nth-child(n+13),
-    .module-line-list .module-item:nth-child(n+8),
-    .module-lines-list .module-item:nth-child(n+15) {
-        display: none
-    }
 }
 
 @media(max-width:1549px) {
@@ -4528,12 +4518,6 @@ input[type=checkbox] {
 
     .module-vod-list-special .module-blocklist a {
         width: calc(20% - 10px)
-    }
-
-    .module-main .module-lines-list .module-item:nth-child(n+11),
-    .module-line-list .module-item:nth-child(n+7),
-    .module-lines-list .module-item:nth-child(n+13) {
-        display: none
     }
 
     .player-info .video-info-header {
@@ -4611,10 +4595,6 @@ input[type=checkbox] {
         width: calc(25% - 20px)
     }
 
-    .module-main .module-lines-list .module-item:nth-child(n+9) {
-        display: none
-    }
-
     .text-list-item {
         padding: 13px 10px
     }
@@ -4665,11 +4645,6 @@ input[type=checkbox] {
 
     .module-lines-list .module-item:nth-child(n+13) {
         display: inline-block
-    }
-
-    .module-line-list .module-item:nth-child(n+6),
-    .module-lines-list .module-item:nth-child(n+16) {
-        display: none
     }
 
     .module-item-cover:hover {
@@ -5036,12 +5011,6 @@ input[type=checkbox] {
     .module-main .module-lines-list .module-item:nth-child(n+9),
     .module-line-list .module-item:nth-child(n+6) {
         display: inline-block
-    }
-
-    .module-main .module-lines-list .module-item:nth-child(n+11),
-    .module-line-list .module-item:nth-child(n+11),
-    .module-lines-list .module-item:nth-child(n+11) {
-        display: none
     }
 
     .module-item-title {
@@ -6028,19 +5997,10 @@ input[type=checkbox] {
         margin: 0 10px 12px 0
     }
 
-    .module-line-list .module-item:nth-child(n+7) {
-        display: none
-    }
-
     .module-main .module-lines-list .module-item:nth-child(n+9),
     .module-lines-list .module-item:nth-child(n+11),
     .module-line-list .scroll-box .module-item:nth-child(n+7) {
         display: inline-block
-    }
-
-    .module-main .module-lines-list .module-item:nth-child(n+10),
-    .module-lines-list .module-item:nth-child(n+13) {
-        display: none
     }
 
     .scroll-content .module-item {
